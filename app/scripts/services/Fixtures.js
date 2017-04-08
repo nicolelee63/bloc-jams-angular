@@ -3,12 +3,12 @@
          var Fixtures = {};
          
          var albumPicasso = {
-         title: 'The Colors',
-         artist: 'Pablo Picasso',
-         label: 'Cubism',
-         year: '1881',
-         albumArtUrl: '/assets/images/album_covers/01.png',
-         songs: [
+            title: 'The Colors',
+            artist: 'Pablo Picasso',
+            label: 'Cubism',
+            year: '1881',
+            albumArtUrl: '/assets/images/album_covers/01.png',
+            songs: [
              { title: 'Blue', duration: '161.71', audioUrl: '/assets/music/blue' },
              { title: 'Green', duration: '103.96', audioUrl: '/assets/music/green' },
              { title: 'Red', duration: '268.45', audioUrl: '/assets/music/red' },
@@ -37,9 +37,9 @@
         };
          
         Fixtures.getCollection = function(numberOfAlbums){
-            this.albums = [];
-            for (var i=0; i < 12; i++) {
-                this.albums.push(angular.copy(albumPicasso));
+            var albumCollection = [];
+            for (var i=0; i < numberOfAlbums; i++) {
+               albumCollection.push(angular.copy(albumPicasso));
             }
         };
          

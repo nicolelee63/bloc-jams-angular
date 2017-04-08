@@ -57,14 +57,12 @@ html {
      height: 100%;
      padding-left: 1rem;
      padding-right: 1rem;
-     /* #4 */
      vertical-align: middle;
      color: white;
      font-size: 0.625rem;
      letter-spacing: 0.05rem;
      font-weight: 700;
      text-transform: uppercase;
-     /* #3 */
      text-decoration: none;
      cursor: pointer;
  }
