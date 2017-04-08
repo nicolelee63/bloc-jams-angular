@@ -88,13 +88,15 @@
         */
         SongPlayer.currentTime = null;
         
+        SongPlayer.volume = 75;
+        
         
         SongPlayer.play = function (song) {
             song = song || SongPlayer.currentSong;
             if (SongPlayer.currentSong !== song) {
                 setSong(song);
                 playSong();
-            } else if(SongPlayer.currentSong === song) {
+            } else if (SongPlayer.currentSong === song) {
                 if (currentBuzzObject.isPaused()) {
                     playSong();
                 }
@@ -137,6 +139,12 @@
                 currentBuzzObject.setTime(time);
             }
         };
+        
+        SongPlater.setVolume = function (volume) {
+            if(currentBuzzObject) {
+                currentBuzzObject.setVolume(volume);
+            }
+        }
          
         return SongPlayer;
     }
