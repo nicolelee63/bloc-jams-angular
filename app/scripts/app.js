@@ -17,7 +17,7 @@
              controller: 'AlbumCtrl as collection',
              
              templateUrl: '/templates/album.html'
-         });
+         })
         .state('collection', {
              url: '/collection',
              controller: 'CollectionCtrl as collection',
